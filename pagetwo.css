@@ -1,13 +1,22 @@
 /* PER TUTTI: a che serve root, è una variabile css globale che serve a salvare 
 i colori in un unico posto per riutilizzarli nel codice usando il var () 
 come ho fatto, e ti oltre questo ti semplica anche il lavoro perche non ti devi andare.a ricordare 
-a memoria ogni volta il codice esadecimale del colore */
+a memoria ogni volta il codice esadecimale del colore */ 
+/*geniale-Jacopo
+
+ho inserito il margine e il padding a 0 di default per ogni elemento*/
 
 :root {
     --airbnb-pink: #FF385C;
     --airbnb-dark: #222222;
     --airbnb-gray: #717171;
 }
+
+*{
+    margin:0;
+    padding:0;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -63,7 +72,7 @@ body {
     background-color: #EFEFEF;
 }
 
-.text-muted-custom {
+p { /* ho sostitutito la classe text-muted-custom con p perchè va applicata a tutti i paragraph, a sto punto usiamo come selettore i p senza scrivere la classe ogni volta*/
     color: var(--airbnb-gray);
     font-size: 14px;
 }
@@ -72,6 +81,36 @@ body {
     font-weight: 600;
     font-size: 15px;
     margin-top: 2px;
+}
+
+
+
+
+/*Card Section*/
+
+ion-icon {
+    padding-right:1%;
+    color: #FF385C;
+}
+
+.gallerySection img {
+  border-radius: 10px;
+  width: 100%;
+   aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.gallerySection p {
+  margin-bottom: 0px;;
+}
+
+.gallerySection span {
+   font-weight: bold;
+   color: black;
+}
+
+.col {
+    margin-bottom: 6%;
 }
 
 
