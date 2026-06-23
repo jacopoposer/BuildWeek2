@@ -1,19 +1,11 @@
-header{
-
-   
+.nav-item a {
+    color: white;
 }
 
-
-.nav-item a{
-color: white;
-}
-
-
-
-.navbar-brand img{
-margin-left: 70px;
-display: flex;
-width: 100px;
+.navbar-brand img {
+    margin-left: 70px;
+    display: flex;
+    width: 100px;
 }
 
 .navbar-text{
@@ -24,9 +16,11 @@ width: 100px;
     padding-right: 80px;
    
 }
+
 .navbar-text p{
      margin: 0px;
 }
+
 .navbar-text button{
     border-radius: 50px;
     display: flex;
@@ -37,15 +31,34 @@ width: 100px;
     gap: 10px;
     color: grey;
 }
-.cerca button{
+
+.search button{
     border: none;
- border-radius: 50px;
- background-color: red;
- margin-right: 20px;
- width: 50px;
- height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
 }
 
-.foto{
 
+
+/* questo è il css del footer quindi lasciamolo sempre alla fine */
+.footer-airbnb a {
+    color: #717171;
+    text-decoration: none;
+}
+
+.footer-airbnb a:hover, 
+.footer-airbnb .hover-underline:hover {
+    color: #222222;
+    text-decoration: underline !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-pointer:hover {
+    text-decoration: underline;
 }

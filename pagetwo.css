@@ -1,0 +1,97 @@
+/* PER TUTTI: a che serve root, è una variabile css globale che serve a salvare 
+i colori in un unico posto per riutilizzarli nel codice usando il var () 
+come ho fatto, e ti oltre questo ti semplica anche il lavoro perche non ti devi andare.a ricordare 
+a memoria ogni volta il codice esadecimale del colore */
+
+:root {
+    --airbnb-pink: #FF385C;
+    --airbnb-dark: #222222;
+    --airbnb-gray: #717171;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--airbnb-dark);
+}
+
+.navbar {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-brand img {
+    height: 34px;
+}
+
+.nav-right-btn {
+    color: var(--airbnb-dark);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.plus-badge {
+    background-color: var(--airbnb-pink);
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.filter-btn {
+    border: 1px solid #DADADA;
+    color: var(--airbnb-dark);
+    font-size: 14px;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover, 
+.filter-btn.active {
+    border-color: var(--airbnb-dark);
+    background-color: #F7F7F7;
+    color: var(--airbnb-dark);
+}
+
+.filter-btn.active {
+    background-color: #EFEFEF;
+}
+
+.text-muted-custom {
+    color: var(--airbnb-gray);
+    font-size: 14px;
+}
+
+.stay-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+
+
+/* questo è il css del footer quindi lasciamolo sempre alla fine */
+.footer-airbnb a {
+    color: #717171;
+    text-decoration: none;
+}
+
+.footer-airbnb a:hover, 
+.footer-airbnb .hover-underline:hover {
+    color: #222222;
+    text-decoration: underline !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-pointer:hover {
+    text-decoration: underline;
+}
