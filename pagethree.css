@@ -19,6 +19,7 @@ ho inserito il margine e il padding a 0 di default per ogni elemento*/
 
 main {
      padding: 0 8vw ;
+     display: block;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 }
 
 .navbar-brand img {
-    height: 34px;
+    height: 40px;
 }
 
 .nav-right-btn {
@@ -77,4 +78,26 @@ body {
 .pro-pic {
     width: 80px;
 
+}
+
+
+
+/* questo è il css del footer quindi lasciamolo sempre alla fine */
+.footer-airbnb a {
+    color: #717171;
+    text-decoration: none;
+}
+
+.footer-airbnb a:hover, 
+.footer-airbnb .hover-underline:hover {
+    color: #222222;
+    text-decoration: underline !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-pointer:hover {
+    text-decoration: underline;
 }
