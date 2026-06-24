@@ -80,6 +80,76 @@ body {
 
 }
 
+.datesCard {
+top:11%;
+right: 0%;
+border-radius: 24px;
+padding: 24px;
+box-shadow: 11px 11px 30px rgba(0, 0, 0, 0.5);
+border: 1px solid rgba(0, 0, 0, 0.05);
+width: 30%;
+}
+
+.datesCard ion-icon {
+padding-right: 0.5rem;
+color: #FF385C;
+    
+}
+
+input {
+ width: 100%;
+ height: 3rem;
+ border: none;
+ padding: 3px;
+}
+
+.modalDate div:first-child input {
+    border-right: 1px solid #222222;
+}
+
+
+
+input[type="text"]{
+    border-top: 1px solid #222222;
+    padding: 2px;
+}
+
+
+.datesCard h5{
+    font-size: 1rem;
+    line-height: 1.5; 
+}
+.datesCard p, ion-icon{
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.modalDate {
+    border-radius: 16px;
+    border: solid #222222 1px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.datesCard button{
+    border: none;
+    border-radius: 16px;
+    background-color: #FF385C;
+    color: white;
+    margin-top: 0.5rem;
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+
+    .datesCard{
+        position: static !important;
+        width: 100% !important;
+        margin-top: 2rem !important;
+    }
+
+}
+
 
 
 /* questo è il css del footer quindi lasciamolo sempre alla fine */
