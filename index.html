@@ -28,7 +28,7 @@
         <div class="d-flex justify-content-center">
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#" style="color: white;">Places To Stay</a>
               </li>
               <li class="nav-item">
@@ -66,61 +66,84 @@
     </nav>
 
     <!-- secondo navbar -->
-    <div class="seconda-navbar ">
+       <div class="two-navbar ">
 
-      <div class="d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg bg-tertiary rounded-pill"
-          style="width: 35%; margin-top: 35px ;border: black 2px solid;">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="font-size: 15px;">Location <br>
-              <p style="color: gainsboro; ">Where Are You Going?</p>
-            </a>
+            <div class="d-flex justify-content-center bg-black">
+                <nav class="navbar navbar-expand-lg bg-white rounded-pill"
+                    style="width: 65%; margin-top: 35px ;border: black 2px solid;padding: 20px;height: 100px; ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"
+                            style="font-size: 15px;  display: flex; gap: 30px;flex-direction: column;">Location <br>
+                            <p style="color: grey; ">Where Are You Going?</p>
+                        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-              aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 g-4">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Check-in <br>
-                    <p style="color: gainsboro;">gg/mm/aaaa</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Check-out <br>
-                    <p style="color: gainsboro;">gg/mm/aaaa</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Guestes <br>
-                    <p style="color: gainsboro;">Add Guests</p>
-                  </a>
-                </li>
-              </ul>
-              <div class="search">
-                <button>
-                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-search" viewBox="0 0 16 16">
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                  </svg>
-                </button>
-              </div>
-              </form>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 g-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Check-in <br>
+                                        <div class="calender">
+                                            <p style="color: grey;">gg/mm/aaaa</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16"
+                                                style="color: black;  ">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Check-out <br>
+                                        <div class="calender">
+                                            <p style="color: grey;">gg/mm/aaaa</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16"
+                                                style="color: black;">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Guestes <br>
+                                        <p style="color: grey;">Add Guests</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="cerca">
+                                <button <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
             </div>
-          </div>
-      </div>
-    </div>
+        </div>
     </nav>
 
 
     </div>
   </header>
   <main>
-    <div class="foto">
-      <img src="./assets/home.jpg" alt="" width="100%" height="100%">
-    </div>
+     <div class="GO-NEAR-photo">
+            <img class="hero-section" src="./assets/home.jpg" alt="">
+            <div class="GO-NEAR">
+                <h1 style="color: white; font-size: 100px;"> Go <br> Near</h1>
+                <button>Explore nearby stays</button>
+            </div>
+
+
+        </div>
 
    <section class="py-5">
       <div class="container px-5 px-lg-3">
