@@ -12,6 +12,7 @@
 body {
     font-family: Arial, sans-serif !important;
     color: var(--airbnb-dark);
+    
 }
 
 @media only screen
@@ -19,62 +20,17 @@ body {
 and (min-width: 320px) 
 and (max-width: 768px) 
 and (orientation: portrait){
- .nav-item a {
-        color: white;
-    }
-
-
-
-    .navbar-brand img {
-        margin-left: 70px;
-        display: flex;
-        width: 100px;
-    }
-
-    .navbar-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        padding-right: 80px;
-
-    }
-
-    .navbar-text p {
-        margin: 0px;
-    }
-
-    .navbar-text button {
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70px;
-        height: 40px;
-        gap: 10px;
-        color: grey;
-    }
-
-    .cerca button {
-        border: none;
-        border-radius: 50px;
-        background-color: #FF385C;
-        color: white;
-        margin-right: 20px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .GO-NEAR {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        background-color: blue;
-        width: 30%;
-
-
-    }
+ .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    
+ }
+ .container-fluid img{
+    height: 50px;
+ }
+ .navbar-toggler-icon button{
+   -color:white
+ }
 }
 
 @media only screen  /* MOBILE ORIZZONTALE */
