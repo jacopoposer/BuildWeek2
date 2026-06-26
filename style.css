@@ -4,9 +4,10 @@
     --airbnb-gray: #717171;
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,316 +15,79 @@ body {
     color: var(--airbnb-dark);
 }
 
-@media only screen
-/* MOBILE VERTICALE */
-and (min-width: 320px) 
-and (max-width: 768px) 
-and (orientation: portrait){
- .nav-item a {
-        color: white;
-    }
-
-
-
-    .navbar-brand img {
-        margin-left: 70px;
-        display: flex;
-        width: 100px;
-    }
-
-    .navbar-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        padding-right: 80px;
-
-    }
-
-    .navbar-text p {
-        margin: 0px;
-    }
-
-    .navbar-text button {
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70px;
-        height: 40px;
-        gap: 10px;
-        color: grey;
-    }
-
-    .cerca button {
-        border: none;
-        border-radius: 50px;
-        background-color: #FF385C;
-        color: white;
-        margin-right: 20px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .GO-NEAR {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        background-color: blue;
-        width: 30%;
-
-
-    }
+.hover-bg-dark:hover {
+    background-color: #2b2b2b;
 }
 
-@media only screen  /* MOBILE ORIZZONTALE */
-and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
-     .nav-item a {
-        color: white;
-    }
 
-
-
-    .navbar-brand img {
-        margin-left: 70px;
-        display: flex;
-        width: 100px;
-    }
-
-    .navbar-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        padding-right: 80px;
-
-    }
-
-    .navbar-text p {
-        margin: 0px;
-    }
-
-    .navbar-text button {
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70px;
-        height: 40px;
-        gap: 10px;
-        color: grey;
-    }
-
-    .cerca button {
-        border: none;
-        border-radius: 50px;
-        background-color: #FF385C;
-        color: white;
-        margin-right: 20px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .GO-NEAR {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        background-color: blue;
-        width: 30%;
-
-
-    }
+.search-pill {
+    transition: box-shadow 0.3s;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+/* --- LOGICA DEI BORDI --- */
+
+@media (max-width: 767px) {
+    .search-pill { 
+        flex-direction: column; 
+        border-radius: 30px !important; 
+        align-items: flex-start !important; /* Forza l'allineamento a sinistra del contenitore */
+    }
     
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-
-    .nav-item a {
-        color: white;
-    }
-
-
-
-    .navbar-brand img {
-        margin-left: 70px;
-        display: flex;
-        width: 100px;
-    }
-
-    .navbar-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        padding-right: 80px;
-
-    }
-
-    .navbar-text p {
-        margin: 0px;
-    }
-
-    .navbar-text button {
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70px;
-        height: 40px;
-        gap: 10px;
-        color: grey;
-    }
-
-    .cerca button {
-        border: none;
-        border-radius: 50px;
-        background-color: #FF385C;
-        color: white;
-        margin-right: 20px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .GO-NEAR {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        background-color: blue;
-        width: 30%;
-
-
-    }
-}
-
-
-@media only screen and (min-width: 1441px) {
-
-    .nav-item a {
-        color: white;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        gap: 30px;
-        margin: 70px;
-    }
-
-
-
-    .navbar-brand img {
-        margin-left: 70px;
-        display: flex;
-        width: 100px;
-    }
-
-    .navbar-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        padding-right: 80px;
-
-    }
-
-    .navbar-text p {
-        margin: 0px;
-    }
-
-    .navbar-text button {
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70px;
-        height: 40px;
-        gap: 10px;
-        color: grey;
-    }
-
-    .cerca button {
-        border: none;
-        border-radius: 50px;
-        background-color: #FF385C;
-        color: white;
-        margin-right: 20px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .GO-NEAR-photo {
-        position: relative;
-      
-        
-
-    }
-
-    .GO-NEAR {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: column;
-        padding-bottom: px;
-        position: absolute;
-        top: 200px;
-        left: 90px;
-
-    }
-    .hero-section {
+    .search-item {
+        border-bottom: 1px solid #eee !important;
         width: 100%;
-        height: 600px;
-        object-fit: cover;
-        margin: 0px;
-    }
-
-    .calender {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 10px;
-
-
-    }
-
-    .calender p {
-        margin: 0;
-        padding: 0;
-    }
-    .city{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
+        text-align: left !important;      /* <--- QUESTO È IL COMANDO CHIAVE */
+        padding-left: 20px !important;    /* Dà un po' di respiro al testo */
         
     }
-}
-.destination-img {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
+
+    .search-item:last-of-type {
+        border-bottom: none !important;
+    }
 }
 
+/* --- HERO SECTION --- */
+.hero-image {
+    height: 60vh;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); 
+}
+
+/* --- DESTINAZIONI --- */
 .destination-card {
-  cursor: pointer;
-  border-radius: 12px;
-  padding: 8px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease;
 }
 
+.destination-card:hover {
+    background-color: #f7f7f7;
+}
 
-/* questo è il css del footer quindi lasciamolo sempre alla fine */
+.destination-img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+/* --- FOOTER --- */
 .footer-airbnb a {
-    color: #717171;
+    color: var(--airbnb-gray);
     text-decoration: none;
 }
 
 .footer-airbnb a:hover, 
 .footer-airbnb .hover-underline:hover {
-    color: #222222;
+    color: var(--airbnb-dark);
     text-decoration: underline !important;
 }
 
@@ -335,3 +99,26 @@ and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
     text-decoration: underline;
 }
 
+/* MEDIA QUERIES (Solo per Desktop / Tablet)  */
+
+@media (min-width: 768px) {
+    /* Rende la barra di ricerca una "pillola" continua su schermi grandi */
+    .search-bar {
+        border-radius: 50px !important;
+    }
+    
+    /* Aggiunge il divisorio grigio tra i campi della barra di ricerca */
+    .divider {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 30px;
+        width: 1px;
+        background-color: #DDDDDD;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+}
