@@ -30,14 +30,14 @@ body {
     .search-pill { 
         flex-direction: column; 
         border-radius: 30px !important; 
-        align-items: flex-start !important; /* Forza l'allineamento a sinistra del contenitore */
+        align-items: flex-start !important; 
     }
     
     .search-item {
         border-bottom: 1px solid #eee !important;
         width: 100%;
-        text-align: left !important;      /* <--- QUESTO È IL COMANDO CHIAVE */
-        padding-left: 20px !important;    /* Dà un po' di respiro al testo */
+        text-align: left !important;     
+        padding-left: 20px !important;    
         
     }
 
@@ -102,12 +102,10 @@ body {
 /* MEDIA QUERIES (Solo per Desktop / Tablet)  */
 
 @media (min-width: 768px) {
-    /* Rende la barra di ricerca una "pillola" continua su schermi grandi */
     .search-bar {
         border-radius: 50px !important;
     }
     
-    /* Aggiunge il divisorio grigio tra i campi della barra di ricerca */
     .divider {
         position: absolute;
         right: 0;
