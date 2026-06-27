@@ -114,6 +114,10 @@ ion-icon {
 }
 
 
+.row > div {
+    cursor:pointer;
+}
+
 
 /* questo è il css del footer quindi lasciamolo sempre alla fine */
 .footer-airbnb a {
