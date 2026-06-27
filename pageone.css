@@ -20,25 +20,58 @@ body {
 }
 
 
+
 .search-pill {
     transition: box-shadow 0.3s;
+}
+
+a {
+    font-size: small !important;
+}
+
+.bi-globe {
+    font-size: small !important;
+}
+
+.search-pill button {
+    margin-left: 3rem;
+}
+
+/*style="max-width: 850px; width: 100%; border: 1px solid #ddd;"*/
+
+@media (min-width: 767px) {
+    .navbar {
+        padding-left: 7rem !important;
+        padding-right: 7rem !important;
+    }
+
+    .searchItem {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #navbarText {
+        margin-left: 100px;
+    }
 }
 
 /* --- LOGICA DEI BORDI --- */
 
 @media (max-width: 767px) {
-    .search-pill { 
-        flex-direction: column; 
-        border-radius: 30px !important; 
-        align-items: flex-start !important; 
+    .search-pill {
+        flex-direction: column;
+        border-radius: 30px !important;
+        align-items: flex-start !important;
+        width:100%;
     }
-    
+
     .search-item {
         border-bottom: 1px solid #eee !important;
         width: 100%;
-        text-align: left !important;     
-        padding-left: 20px !important;    
-        
+        text-align: left !important;
+        padding-left: 20px !important;
+
     }
 
     .search-item:last-of-type {
@@ -58,7 +91,7 @@ body {
     font-size: 3.5rem;
     line-height: 1.1;
     letter-spacing: -1.5px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* --- DESTINAZIONI --- */
@@ -85,7 +118,7 @@ body {
     text-decoration: none;
 }
 
-.footer-airbnb a:hover, 
+.footer-airbnb a:hover,
 .footer-airbnb .hover-underline:hover {
     color: var(--airbnb-dark);
     text-decoration: underline !important;
@@ -105,7 +138,7 @@ body {
     .search-bar {
         border-radius: 50px !important;
     }
-    
+
     .divider {
         position: absolute;
         right: 0;
